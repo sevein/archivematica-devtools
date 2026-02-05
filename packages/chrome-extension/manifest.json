@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Archivematica devtools",
+  "description": "Injects extra functionality on http://127.0.0.1:62080.",
+  "version": "0.1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://127.0.0.1/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
