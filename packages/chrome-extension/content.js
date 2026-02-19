@@ -290,10 +290,10 @@
         }
       }
 
-      // Step 7: Click the transfer action button inside the selected li.
-      const actionButton = picturesLi.querySelector(".tree-node-actions .transfer-tree-action");
+      // Step 7: Click the "add" button from the file browser section.
+      const actionButton = document.querySelector("section#file-browser button.transfer-tree-add-btn");
       if (!(actionButton instanceof HTMLElement)) {
-        fail(7, 'could not find ".tree-node-actions .transfer-tree-action" inside pictures item');
+        fail(7, 'could not find "section#file-browser button.transfer-tree-add-btn"');
         return;
       }
       actionButton.click();
